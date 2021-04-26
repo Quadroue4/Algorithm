@@ -11,13 +11,11 @@ baekjoon-1043/baekjoon-1043.VC.db
 *.idb
 *.pdb
 *.txt
-*.cpp
 *.h
 *.exe
 *.ilk
 *.ipch
-baekjoon-1149/.vs/baekjoon-1149/v14/.suo
 *.db
-baekjoon-1167/.vs/baekjoon-1167/v14/.suo
-baekjoon-1238/.vs/baekjoon-1238/v14/.suo
 *.opendb
+*.suo
+*.stdafx.cpp
