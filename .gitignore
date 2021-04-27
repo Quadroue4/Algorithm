@@ -18,4 +18,6 @@ baekjoon-1043/baekjoon-1043.VC.db
 *.db
 *.opendb
 *.suo
-*.stdafx.cpp
+stdafx.cpp
+sentence_sim/sentence_sim/stdafx.cpp
+sentence_sim/sentence_sim/stdafx.cpp
