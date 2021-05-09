@@ -11,9 +11,10 @@ using namespace std;
 int arr[500][500];
 int result[500][500];
 
-
 int main()
 {
+	ios::sync_with_stdio(false);
+	cin.tie(0);
 	int N;
 	cin >> N;
 	for (int i = 0; i < N; i++) {
@@ -30,12 +31,6 @@ int main()
 			result[i + 1][j + 1] = max(result[i + 1][j + 1], result[i][j] + arr[i + 1][j + 1]);
 		}
 	}
-/*
-	for(int i=0;i<N;i++)
-		for (int j = 0; j <= i; j++) {
-			cout << result[i][j];
-		}
-	*/
 	int max1 = 0;
 
 	for (int i = 0; i < N; i++)
