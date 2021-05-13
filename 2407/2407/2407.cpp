@@ -61,6 +61,7 @@ vector<int> dfs(int n, int m) {
 int main()
 {
 	vector<int> a, b, c;
+	/*
 	a.push_back(9);
 	a.push_back(9);
 	a.push_back(9);
@@ -74,6 +75,7 @@ int main()
 	c = calculate(a, b);
 	for (int i = 0; i < c.size(); i++)
 		cout << c[c.size() - 1 - i];
+		*/
 	int n, m;
 	cin >> n >> m;
 
