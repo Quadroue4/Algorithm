@@ -8,23 +8,21 @@ int dpDown[1002];
 int arr[1002];
 int N;
 
-int find_longest(int idx){
+void find_longest(int idx){
     int max_len = 0;
     for(int i=0;i<idx;i++){
         if(arr[idx] > arr[i])
             max_len = max(max_len,dpUp[i]);
     }
     dpUp[idx] = max_len+1;
-    return dpUp[idx];
 }
-int find_smallest(int idx){
+void find_smallest(int idx){
     int max_len = 0;
     for(int i=idx+1;i<N;i++){
         if(arr[idx] > arr[i])
             max_len = max(max_len,dpDown[i]);
     }
     dpDown[idx] = max_len+1;
-    return dpDown[idx];
 }
 
 int main(){
