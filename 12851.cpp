@@ -37,7 +37,7 @@ int main(){
     way[N] = 1;
     int start = N;
     punc_list.push(start);
-    while(true && !punc_list.empty()){
+    while(!punc_list.empty()){
         start = punc_list.front();
         punc_list.pop();
         move_from(start);
