@@ -48,10 +48,12 @@ int LCA(int a,int b){
         b = dp[b][i];
     }
     while(a != b){
-        i=0;
-        while(dp[a][i+1] != dp[b][i+1]){
-            if(i<16)
-                i++;
+        i=16;
+        while(dp[a][i] == dp[b][i]){
+            if(i>0)
+                i--;
+            else
+                break;
         }
         sum += cost_dp[a][i];
         sum += cost_dp[b][i];
