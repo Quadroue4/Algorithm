@@ -86,7 +86,6 @@ int main(){
     }
 
     for(int i=1;i<=V;i++){
-        //cout<<"i is : "<<i<<" ";
         int back = back_edge[i];
         if(is_root[i]){
             if(sub_root_count[i] > 1){
@@ -99,7 +98,6 @@ int main(){
             int next = dfs_graph[i][j];
             if( node_order[i] <= node_order[min_ancestor[next]] ){
                 judge = true;
-                //cout<<"\n fucksex"<<node_order[i]<<" "<<node_order[min_ancestor[next]]<<" next is "<<next<<"\n";
                 break;
             }
         }
@@ -113,10 +111,4 @@ int main(){
         cout<<ans_nodes[i]<<" ";
     }
 
-/*
-    cout<<"\n";
-    for(int i = 1;i<=V;i++){
-        cout<<i<<" "<<min_ancestor[i]<<"\n";
-    }
-*/
 }
