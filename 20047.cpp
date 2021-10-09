@@ -1,4 +1,6 @@
 #include <cstdio>
+#include <iostream>
+using namespace std;
 int n, x, y;
 char S[10001], T[10001], fingers[2];
 int dp[10001][3];
